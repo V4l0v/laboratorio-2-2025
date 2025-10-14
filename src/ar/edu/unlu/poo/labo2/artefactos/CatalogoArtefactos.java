@@ -9,6 +9,7 @@ public class CatalogoArtefactos
 
     private Set<ar.edu.unlu.poo.labo2.artefactos.Artefacto> artefactos;
     private EstrategiaDeMejora mejora;
+
     public CatalogoArtefactos()
 
     {
@@ -22,8 +23,10 @@ public class CatalogoArtefactos
     }
     public void aplicarMejoras()
     {
-        for (Artefacto artefacto:artefactos){
-            mejora.mejorar(artefacto);
+        if(this.mejora!=null) {
+            for (Artefacto artefacto : artefactos) {
+                mejora.mejorar(artefacto);
+            }
         }
     }
 
