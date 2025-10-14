@@ -1,7 +1,7 @@
 package ar.edu.unlu.poo.labo2.artefactos;
 
-import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
-import ar.edu.unlu.poo.labo2.artefactos.CatalogoArtefactos;
+import ar.edu.unlu.poo.labo2.estrategias.AlquimistaExperto;
+import ar.edu.unlu.poo.labo2.estrategias.EscribaArcano;
 import ar.edu.unlu.poo.labo2.estrategias.EstrategiaDeMejora;
 import ar.edu.unlu.poo.labo2.estrategias.ForjadorDeRunas;
 import ar.edu.unlu.poo.labo2.estrategias.JoyeroElfico;
@@ -22,6 +22,7 @@ class CatalogoMejoradoTest {
   private Artefacto pergaminoComplejo;
   private Artefacto pocionCurativa;
   private Artefacto pocionPoderosa;
+  private Artefacto pergaminoInutil;
 
   @BeforeEach
   void setUp() {
@@ -32,6 +33,7 @@ class CatalogoMejoradoTest {
     pergaminoComplejo = new Artefacto("Invocación Mayor", 50, "Pergamino");
     pocionCurativa = new Artefacto("Poción de Salud", 30, "Poción");
     pocionPoderosa = new Artefacto("Elixir de Gigante", 85, "Poción");
+    pergaminoInutil=new Artefacto("Segundo Parcial De Sagula",10,"Pergamino");
   }
 
   @Test
